@@ -1,0 +1,29 @@
+{
+    "name": "tom\/weather",
+    "description": "weather SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "tom",
+            "email": "815281896@qq.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "^7.5",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tom\\Weather\\": "src"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers":[
+                "Tom\\Weather\\ServiceProvider"
+            ]
+        }
+    }
+}
